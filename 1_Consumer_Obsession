@@ -1,0 +1,28 @@
+Goal
+• Create Python scripts to process, visualize, and model accelerometer and gyroscope data to create a machine learning model that can classify barbell exercises and count repetitions.
+
+
+As a Software Development Engineer, my focus is always on creating solutions that address real-world problems and significantly improve the user experience. 
+This directly aligns with Amazon's Customer Obsession leadership principle, which emphasizes starting with the customer and working backwards to earn and keep their trust.
+
+
+Situation: During my final year B.Tech project, I observed a significant gap in the market for fitness wearables. While smart devices like the Apple Watch excelled at tracking cardio activities, they lacked robust functionality for automatically classifying and counting repetitions for strength training exercises like bench presses, squats, deadlifts, overhead presses, or barbell rows [User's query, 405, 407]. This meant that individuals, including myself, had to manually log their strength workouts, which was inconvenient and distracting [User's query, 404, 407]. This was a clear customer pain point – users wanted to focus on their workout, not on manual data entry. My task was to innovate a solution that could automate this process, enabling users to concentrate entirely on their training.
+
+
+Action: To address this, I initiated the "Quantify Motion" project, centered on exercise classification and repetition counting using machine learning. My approach was multi-faceted:
+
+• Data Collection and Pipeline: I created a data pipeline to efficiently handle sensor data from wristbands. This involved collecting accelerometer and gyroscope sensor data from 5 participants performing various barbell exercises with medium to heavy weights. This foundational step ensured I had a rich dataset representative of real-world workout movements. The pipeline handled fundamental data processing steps like reading, splitting, and cleaning CSV files using the Pandas library.
+
+• Deep Data Understanding: I developed Python scripts to preprocess and visualize this raw sensor data. Visualizing the data was crucial in identifying unique patterns for different barbell exercises, which proved essential for differentiation.
+
+• Data Quality Improvement: Sensor data can be noisy, so I implemented various outlier detection methods, including Chauvenet's Criterion and Local Outlier Factor, to effectively clean the data and improve its quality for modeling.
+
+• Feature Engineering: I applied sophisticated feature extraction techniques to derive key insights from the sensor data. These included movement frequency, acceleration peaks, rotational angles, sum of squares, and principal component analysis (PCA), all of which significantly enhanced model performance.
+
+• Predictive Modeling: I developed and implemented supervised machine learning models, specifically Random Forest, Support Vector Machines (SVM), and Neural Networks, for classifying these barbell exercises. I experimented with feature selection and hyperparameter tuning to optimize model performance.
+
+• Repetition Counting Algorithm: Crucially, I created a custom algorithm for accurate repetition counting based on the classified exercises. This added the vital "tracking" element for users.
+
+
+Result: The efforts culminated in a highly effective solution. The implemented machine learning models achieved an impressive accuracy of 98.5% in classifying barbell exercises. More importantly, the solution demonstrated the crucial ability to generalize effectively to new individuals, making it suitable for a widely applicable consumer product.
+This innovative approach offers a path toward automating strength training tracking, directly addressing the customer's need to focus entirely on their workout rather than manual data entry. It moves beyond the current limited capabilities of smartwatches for strength training, truly providing a product that exceeds customer expectations and enhances their fitness journey. This project directly embodies Customer Obsession by identifying an unmet customer need and vigorously working backwards to deliver a highly accurate and useful solution.
